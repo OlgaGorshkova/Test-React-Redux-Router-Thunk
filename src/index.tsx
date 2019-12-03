@@ -13,6 +13,7 @@ ReactDOM.render(
         <ConnectedRouter history={history}>
             <Switch>
                 <Route exact path='/' component={App} />
+                <Route path='/test' render={()=>(<h1>Test Page</h1>)}/>
                 <Route path='*' render={()=>(<h1>Page not found</h1>)}/>
             </Switch>      
         </ConnectedRouter> 
